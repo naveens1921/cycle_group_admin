@@ -1,0 +1,11 @@
+<div class="spot-details" *ngIf="spotDetails">
+  <h2>{{ spotDetails.name }}</h2>
+  <p>Latitude: {{ spotDetails.latitude }}</p>
+  <p>Longitude: {{ spotDetails.longitude }}</p>
+  <p>Accessible by Cycling: {{ spotDetails.accessible_by_cycling ? 'Yes' : 'No' }}</p>
+  <button (click)="navigateToSpotList()">Spot List Page</button>
+</div>
+<div *ngIf="!spotDetails">
+  <p>Spot not found or you do not have permission to access this spot.</p>
+  <button (click)="navigateToSpotList()">Spot List Page</button>
+</div>

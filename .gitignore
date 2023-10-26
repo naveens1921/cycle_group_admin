@@ -1,0 +1,36 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/cycle-frontend/node_modules
+/cycle-frontend/npm-debug.log
+/cycle-frontend/yarn-error.log
+
+# IDEs and editors
+/node_modules
+
+# Visual Studio Code
+/cycle-frontend/.vscode/*
+/cycle-frontend/!.vscode/settings.json
+/cycle-frontend/!.vscode/tasks.json
+/cycle-frontend/!.vscode/launch.json
+/cycle-frontend/!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db

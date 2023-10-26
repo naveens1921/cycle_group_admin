@@ -1,0 +1,7 @@
+<div class="home-container">
+    <h1>Welcome to the Cycle Around The World</h1>
+    <div class="buttons">
+        <button *ngIf="!authenticated" (click)="login()">Login</button>
+        <button *ngIf="!authenticated" (click)="signup()">Signup</button>
+    </div>
+</div>

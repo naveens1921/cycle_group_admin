@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="left-panel">
+    <h2>Spot List</h2>
+    <p>Click on list item for details</p>
+    <ul>
+      <li *ngFor="let name of spotNames" (click)="showSpotDetails(name)">{{ name }}</li>
+    </ul>
+    <button (click)="logout()" class="logout">Logout</button>
+  </div>
+  <div class="right-panel">
+    <app-calculate></app-calculate>
+  </div>
+</div>
